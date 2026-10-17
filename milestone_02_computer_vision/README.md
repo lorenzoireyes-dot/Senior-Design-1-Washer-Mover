@@ -23,3 +23,11 @@ The documented camera processing and design selection are milestone activities. 
 ## Evidence
 
 Place the original Milestone 02 Word report in [reports/](reports/). It already contains the relevant figures and design evidence. Camera source code can be stored in [camera_source/](../camera_source/) when provided.
+
+## Additional project files
+
+- [Pictures](pictures/): Photographs, diagrams, and screenshots.
+- [MATLAB code](matlab_code/): MATLAB scripts and Simulink models.
+- [CAD documents](cad_documents/): Original CAD files, assemblies, and drawings.
+
+These directories are ready for uploads; their contents should not be treated as completed deliverables until files are added.
