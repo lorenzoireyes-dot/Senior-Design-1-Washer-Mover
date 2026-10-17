@@ -2,40 +2,40 @@
 
 **Clemson University | ECE 4950 | Group 18 | Fall 2026**
 
-An ongoing senior design project exploring an autonomous washer moving system through embedded control, machine vision, mechanical design, and engineering verification.
+An ongoing senior design project exploring an autonomous washer moving system through sensor and actuator control, computer vision, mechanical design, and engineering evaluation.
 
-## Project status
+## Progress
 
-Two technical milestones have been completed and documented in the team's reports. The full autonomous washer moving system remains under development.
+Two milestones are documented with original PDF reports and supporting engineering files. The final integrated autonomous washer moving system remains under development.
 
-| Milestone | Focus | Status |
+| Milestone | Completed work | Project evidence |
 | --- | --- | --- |
-| [01: Sensor and Actuator Control](milestone_01_sensor_actuator/README.md) | Arduino Mega, MATLAB/Simulink, potentiometer, servo motor, SolidWorks | Completed milestone |
-| [02: Computer Vision and Concept Selection](milestone_02_computer_vision/README.md) | MATLAB image processing, game piece detection, centroid tracking, design requirements, concept evaluation | Completed milestone |
+| [01: Sensor and Actuator Control](milestone_01_sensor_actuator/README.md) | Arduino Mega 2560, Simulink sensor acquisition, manual and threshold based servo control, SolidWorks design | [Report](milestone_01_sensor_actuator/reports/Milestone1_Group18%20(1).pdf), [Simulink models](milestone_01_sensor_actuator/matlab_code/), [Pictures](milestone_01_sensor_actuator/pictures/) |
+| [02: Computer Vision and Concept Selection](milestone_02_computer_vision/README.md) | MATLAB image processing, color and shape classification, centroid identification, mechanical concept evaluation | [Report](milestone_02_computer_vision/reports/milestone2_g18.pdf), [MATLAB scripts](milestone_02_computer_vision/matlab_code/), [CAD files](milestone_02_computer_vision/cad_documents/) |
 
-## Milestone highlights
+## Engineering highlights
 
-### 01 | Sensor and actuator control
+### Milestone 01
 
-Using MATLAB/Simulink 2026a and an Arduino Mega 2560, the team acquired potentiometer measurements, controlled a servo motor manually, and implemented threshold based actuator switching. A SolidWorks golf ball shaped part with the team identifier was also modeled.
+The team interfaced a potentiometer and servo motor with an Arduino Mega using MATLAB and Simulink 2026a. The report documents live analog measurement, manual actuator commands, and threshold based switching. A SolidWorks golf ball shaped design was created as a separate introductory CAD exercise.
 
-### 02 | Computer vision and mechanical concept selection
+### Milestone 02
 
-The team developed camera based image processing to identify and locate game pieces, represented observations in a `gameState` structure, and evaluated mechanical approaches using a weighted decision matrix. A rotating board with stationary electromagnetic pickup was selected, receiving 79/100 in the report's evaluation.
+The team explored background subtraction, region detection, centroid location, and object classification using MATLAB. The repository includes scripts for processing saved test images and experimenting with webcam capture. A weighted design matrix selected a rotating board with a stationary electromagnetic pickup, scoring 79/100 in the team's evaluation.
 
-## Repository structure
+## Repository layout
 
-- [Milestone 01 documentation](milestone_01_sensor_actuator/)
-- [Milestone 02 documentation](milestone_02_computer_vision/)
-- [Camera source code](camera_source/)
-- [Future milestones](future_milestones/)
-
-The original Word milestone reports and camera source code are **not yet in this repository**. The report directories are prepared for those files. The milestone summaries are based on the reports supplied for documentation review. Images are already embedded in the reports, so separate screenshots are not necessary.
+- [Milestone 01](milestone_01_sensor_actuator/): PDF report, Simulink models, plots, circuit diagram, and hardware photographs.
+- [Milestone 02](milestone_02_computer_vision/): PDF report, MATLAB vision scripts, test images, design evidence, and game board CAD exports.
+- [Camera source](camera_source/): Directory retained for future consolidated camera firmware or scripts.
+- [Future milestones](future_milestones/): Reserved for subsequent documented work.
 
 ## Team
 
 Group 18: Aden Casselman, Elijah Jarrett, Lorenzo Reyes, Skyler Beck, and Tyler Burton.
 
-## Scope
+## Status and attribution
 
-The completed milestones establish preliminary sensing, actuation, image processing, and concept selection work. They do not establish that the final autonomous robot has been built or integrated. This repository will be updated as additional work is completed.
+This is a collaborative university engineering project. The source code and reports represent team work; individual contributions are not assigned without evidence. The first two milestone exercises and evaluations are documented, but a fully integrated autonomous system is not claimed.
+
+The repository retains some generated Simulink build outputs from the original Milestone 01 upload. These are not primary source files and are excluded from future tracking by the updated Git ignore rules.
