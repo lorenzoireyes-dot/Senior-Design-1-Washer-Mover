@@ -1,0 +1,11 @@
+# MATLAB and Simulink generated files
+*.asv
+*.autosave
+slprj/
+*.slxc
+*.mex*
+# Operating system files
+.DS_Store
+Thumbs.db
+# Temporary Office files
+~$*
