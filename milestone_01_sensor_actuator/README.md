@@ -4,31 +4,24 @@
 
 ## Overview
 
-The team used MATLAB and Simulink 2026a with an Arduino Mega 2560, B103 potentiometer, and MG92B servo motor to complete three sensor and actuator experiments. A separate SolidWorks exercise produced a golf ball shaped model with “Team 18” debossed into the surface.
+The team tested Arduino Mega 2560 interfacing with MATLAB and Simulink 2026a using a B103 potentiometer and MG92B servo motor. A separate SolidWorks exercise produced a golf ball shaped design with the team number debossed.
 
-## Demonstrated work
+## Experiments
 
-1. **Analog data acquisition:** Read potentiometer input on Arduino analog pin A4 and displayed the readings in a Simulink Scope. The observed range was approximately 0 to just under 700.
-2. **Manual actuator control:** Changed servo motor commands through Simulink and observed corresponding changes in operation.
-3. **Threshold based control:** Combined potentiometer measurements with Simulink switching logic, using a threshold of approximately 500 to change servo operating state.
-4. **3D design:** Modeled a golf ball shaped part in SolidWorks within the assigned dimensional envelope.
+1. **Potentiometer measurement:** Analog input on A4 was monitored in a Simulink Scope. The report describes measurements ranging from approximately 0 to just under 700.
+2. **Manual servo control:** Simulink switching and constant inputs were used to change actuator commands.
+3. **Threshold based servo control:** Potentiometer readings were compared with an adjustable threshold, demonstrated at approximately 500, to change the servo operating state.
+4. **CAD exercise:** A golf ball shaped object with a team identifier was designed within the assigned dimensions.
 
-The experiments were operated using Simulink's Monitor and Tune functionality. The report includes circuit diagrams, a photograph of the assembled circuit, Simulink model screenshots, signal plots, and a SolidWorks rendering.
+The report contains some inconsistent descriptions of which threshold crossing activates or deactivates the motor. This summary does not assume a particular transition direction.
 
-## Limitations and scope
+## Uploaded artifacts
 
-The report notes inconsistent potentiometer readings and repeatability limitations. The threshold experiment's prose contains differing descriptions of the exact motor state transition, so this README records the verified existence of threshold based switching without asserting a single transition direction.
+- [Original Milestone 01 report (PDF)](reports/Milestone1_Group18%20(1).pdf), including circuit images, plots, hardware photographs, and the CAD figure.
+- [Simulink models and build files](matlab_code/): `arduino_interfacing.slx` and `milestone1.slx` are the principal editable models.
+- [Pictures](pictures/): Circuit diagram, Simulink plots and screenshots, and original HEIC hardware photographs.
+- [CAD documents](cad_documents/): No standalone CAD file uploaded for this milestone. The SolidWorks rendering is included in the PDF report.
 
-This milestone is a foundational sensor and actuator exercise, **not a demonstration of a completed autonomous washer mover**.
+## Engineering limitations
 
-## Original evidence
-
-Place the original Milestone 01 Word report in [reports/](reports/). Figures are already embedded in the report; separate image uploads are optional.
-
-## Additional project files
-
-- [Pictures](pictures/): Photographs, diagrams, and screenshots.
-- [MATLAB code](matlab_code/): MATLAB scripts and Simulink models.
-- [CAD documents](cad_documents/): Original CAD files, assemblies, and drawings.
-
-These directories are ready for uploads; their contents should not be treated as completed deliverables until files are added.
+The potentiometer exhibited measurement variability. The Simulink folder includes generated build artifacts that are not necessary for reviewing the models. This milestone demonstrates introductory sensor and actuator interfacing, not a completed autonomous washer mover.
