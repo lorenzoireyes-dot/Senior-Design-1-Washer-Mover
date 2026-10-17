@@ -4,8 +4,14 @@
 slprj/
 *.slxc
 *.mex*
+*_ert_rtw/
+*.elf
+*.hex
+*.eep
+
 # Operating system files
 .DS_Store
 Thumbs.db
+
 # Temporary Office files
 ~$*
