@@ -24,3 +24,11 @@ This milestone is a foundational sensor and actuator exercise, **not a demonstra
 ## Original evidence
 
 Place the original Milestone 01 Word report in [reports/](reports/). Figures are already embedded in the report; separate image uploads are optional.
+
+## Additional project files
+
+- [Pictures](pictures/): Photographs, diagrams, and screenshots.
+- [MATLAB code](matlab_code/): MATLAB scripts and Simulink models.
+- [CAD documents](cad_documents/): Original CAD files, assemblies, and drawings.
+
+These directories are ready for uploads; their contents should not be treated as completed deliverables until files are added.
