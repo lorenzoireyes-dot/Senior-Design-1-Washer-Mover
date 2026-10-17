@@ -1,33 +1,31 @@
 # Milestone 02: Computer Vision and Concept Selection
 
-**ECE 4950 | Group 18**
+**ECE 4950 | Group 18 | Fall 2026**
 
 ## Overview
 
-The second milestone addresses the washer mover's machine vision subsystem and system level design selection. The team's report documents MATLAB image processing for identifying and locating game objects, requirements development, and a weighted comparison of mechanical concepts.
+This milestone investigated camera based recognition of game pieces and compared mechanical designs for the washer mover. The team's weighted decision matrix selected a rotating game board with a stationary electromagnetic pickup, scoring **79/100**.
 
-## Documented work
+## Vision processing
 
-- Camera image processing and object detection using MATLAB.
-- Classification of game pieces by visual properties including color and shape.
-- Object centroid estimation and organization of detected game state into a `gameState` data structure.
-- Development of engineering requirements and evaluation of competing mechanical designs.
-- Selection of a rotating game board with stationary electromagnetic pickup as the preferred concept.
+The MATLAB scripts explore:
+- Background subtraction and threshold based segmentation.
+- Region properties, bounding boxes, and object centroids.
+- Approximate color recognition using HSV hue.
+- Shape classification using circularity and extent.
+- Visualization of labeled objects and detected positions.
 
-The selected concept scored **79/100** in the report's weighted decision matrix.
+The scripts store intermediate results in a `gameState` structure. This is a prototype data representation, not evidence of completed autonomous motion control.
 
-## Engineering status
+## Uploaded artifacts
 
-The documented camera processing and design selection are milestone activities. Complete autonomous motion, integrated electromagnetic pickup, and a finished washer moving system are **not claimed as completed**.
+- [Original Milestone 02 report (PDF)](reports/milestone2_g18.pdf)
+- [MATLAB scripts](matlab_code/): `milestone_2.m` for saved image processing and `test_file.m` for exploratory camera capture and processing.
+- [Pictures and test images](pictures/): Design brainstorming, decision matrix, requirements, input images, and processing results.
+- [CAD documents](cad_documents/): `QuarterInchGameBoard.dwg` and `QuarterInchGameBoard.stl`.
 
-## Evidence
+## Development status and limitations
 
-Place the original Milestone 02 Word report in [reports/](reports/). It already contains the relevant figures and design evidence. Camera source code can be stored in [camera_source/](../camera_source/) when provided.
+The MATLAB scripts are research and prototyping artifacts. Camera access in `milestone_2.m` is commented out in favor of stored images. `test_file.m` contains multiple experimental camera capture sections with hardware specific configuration. Neither script is represented as a packaged, automatically runnable production application.
 
-## Additional project files
-
-- [Pictures](pictures/): Photographs, diagrams, and screenshots.
-- [MATLAB code](matlab_code/): MATLAB scripts and Simulink models.
-- [CAD documents](cad_documents/): Original CAD files, assemblies, and drawings.
-
-These directories are ready for uploads; their contents should not be treated as completed deliverables until files are added.
+The selected mechanical concept is a design decision, not a claim that the complete mechanism or electromagnetic pickup has been constructed and validated.
