@@ -1,3 +1,5 @@
-# Milestone 02 Reports
+# Milestone 02 Report
 
-This directory is reserved for the original ECE 4950 Milestone 02 Word report. The document has not been uploaded to this repository yet.
+[View the original Group 18 Milestone 02 PDF](milestone2_g18.pdf).
+
+The report documents computer vision experimentation, engineering requirements, design brainstorming, concept evaluation, and the team's selected mechanical approach. Figures are included in the report.
