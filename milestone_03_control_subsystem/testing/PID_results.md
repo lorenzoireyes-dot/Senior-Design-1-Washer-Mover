@@ -17,3 +17,14 @@ Increasing proportional gain produced a stronger response but more overshoot and
 ### Remaining measurements
 
 The report does not provide verified numerical values for overshoot, settling time, or steady state error. This is a qualitative control experiment, not a completed accuracy specification.
+
+### Uploaded test plots
+
+- [Desired position](Pictures/desired_position_fig.png)
+- [Measured motor position](Pictures/motor_position_fig.png)
+- [Error signal](Pictures/error_signal_fig.png)
+
+### Uploaded computer vision test images
+
+- [Pretest background](Pictures/pre-tests_bg.png), [current image](Pictures/pre-tests_curr.png), [difference image](Pictures/pre-tests_diff.png)
+- [Test background](Pictures/test_bg_image.png), [current frame](Pictures/test_curr_image.png), [calculated difference](Pictures/test_calculated_diff.png), [processed detection](Pictures/test_processed_image.png)

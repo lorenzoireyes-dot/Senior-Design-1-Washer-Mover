@@ -17,21 +17,30 @@ Integrate camera based washer identification, a MATLAB App Designer GUI, a Simul
 
 ## Files
 
-| Subdirectory | Contents |
+| Location | Contents |
 | --- | --- |
-| [reports](reports/) | Milestone 03 report summary |
-| [hardware](hardware/) | Motor driver interface and wiring |
-| [matlab_code](matlab_code/) | MATLAB GUI and image processing source file location |
-| [simulink_models](simulink_models/) | Motor control model source file location |
-| [testing](testing/) | PID experiments and observed behavior |
-| [safety](safety/) | Preliminary hazard analysis |
-| [pictures](pictures/) | Figure and hardware photograph location |
+| [reports](reports/) | [Original Milestone 03 PDF](reports/milestone3_g18.pdf) and [report summary](reports/Milestone3_Group18_Summary.md) |
+| [matlab_code](matlab_code/) | [App Designer source: select_gui_test.mlapp](matlab_code/select_gui_test.mlapp) |
+| [Pictures](Pictures/) | Five engineering figures: vision test, GUI startup, circuit diagram, PID parameters, software flowchart |
+| [testing](testing/) | [Controller observations](testing/PID_results.md) and [ten experimental images](testing/Pictures/) |
+
+## Selected engineering evidence
+
+- [GUI startup](Pictures/gui_start_up.png)
+- [Motor driver circuit diagram](Pictures/main_circuit_diagram.png)
+- [Software flowchart](Pictures/software_flow_chart_final.png)
+- [Controller parameter screenshot](Pictures/pid_controller_parameters.png)
+- [Vision system test](Pictures/VisionSystemTest.JPG)
+- [Motor position trace](testing/Pictures/motor_position_fig.png)
+- [Error signal trace](testing/Pictures/error_signal_fig.png)
+- [Desired position trace](testing/Pictures/desired_position_fig.png)
+- [Processed washer detection image](testing/Pictures/test_processed_image.png)
 
 ## Status
 
 **Milestone 03 documented.** Full autonomous washer retrieval is not validated. Controller overshoot, settling time, steady state error, and final risk acceptance have not been quantified or verified in the submitted report.
 
-The submitted Word report and native MATLAB/Simulink files are not yet uploaded in these directories. This repository documentation summarizes the team's report and does not claim separate individual authorship.
+The original Milestone 03 PDF report, native MATLAB App Designer `.mlapp` file, and testing figures are available in the directories above. A standalone Simulink `.slx` model is not present in the Milestone 03 folder. Documentation represents team work and does not assign individual authorship.
 
 ## Team
 

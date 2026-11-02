@@ -6,13 +6,13 @@ An ongoing senior design project exploring an autonomous washer moving system th
 
 ## Progress
 
-Three milestones are documented. Milestones 01 and 02 include original PDF reports and supporting files; Milestone 03 includes engineering documentation derived from the submitted report. The final integrated autonomous washer moving system remains under development.
+Three milestones are documented with their reports and supporting engineering files. Milestone 03 includes the original PDF report, a MATLAB App Designer application, circuit and GUI figures, and motor and vision test images. The fully integrated autonomous washer moving system remains under development.
 
 | Milestone | Completed work | Project evidence |
 | --- | --- | --- |
 | [01: Sensor and Actuator Control](milestone_01_sensor_actuator/README.md) | Arduino Mega 2560, Simulink sensor acquisition, manual and threshold based servo control, SolidWorks design | [Report](milestone_01_sensor_actuator/reports/Milestone1_Group18%20(1).pdf), [Simulink models](milestone_01_sensor_actuator/matlab_code/), [Pictures](milestone_01_sensor_actuator/pictures/) |
 | [02: Computer Vision and Concept Selection](milestone_02_computer_vision/README.md) | MATLAB image processing, color and shape classification, centroid identification, mechanical concept evaluation | [Report](milestone_02_computer_vision/reports/milestone2_g18.pdf), [MATLAB scripts](milestone_02_computer_vision/matlab_code/), [CAD files](milestone_02_computer_vision/cad_documents/) |
-| [03: Control Subsystem and Motor Positioning](milestone_03_control_subsystem/README.md) | MATLAB App Designer washer selection GUI, Arduino Mega and L298N motor interface, Simulink PID experiments, safety and financial evaluation | [Milestone 03 documentation](milestone_03_control_subsystem/reports/Milestone3_Group18_Summary.md), [PID test results](milestone_03_control_subsystem/testing/PID_results.md), [hardware notes](milestone_03_control_subsystem/hardware/README.md) |
+| [03: Control Subsystem and Motor Positioning](milestone_03_control_subsystem/README.md) | MATLAB App Designer GUI, Arduino Mega and L298N interface, motor control testing, safety and financial evaluation | [Report](milestone_03_control_subsystem/reports/milestone3_g18.pdf), [MATLAB app](milestone_03_control_subsystem/matlab_code/select_gui_test.mlapp), [Figures](milestone_03_control_subsystem/Pictures/), [Test images](milestone_03_control_subsystem/testing/Pictures/) |
 
 ## Engineering highlights
 
@@ -32,7 +32,7 @@ Group 18 developed a MATLAB App Designer GUI for detecting colored washers and s
 
 - [Milestone 01](milestone_01_sensor_actuator/): PDF report, Simulink models, plots, circuit diagram, and hardware photographs.
 - [Milestone 02](milestone_02_computer_vision/): PDF report, MATLAB vision scripts, test images, design evidence, and game board CAD exports.
-- [Milestone 03](milestone_03_control_subsystem/): Control subsystem documentation, hardware interface, software workflow, PID test results, risk assessment, and source file directories.
+- [Milestone 03](milestone_03_control_subsystem/): Original PDF report, App Designer source, control and vision figures, experimental plots, and accompanying documentation.
 - [Camera source](camera_source/): Directory retained for future consolidated camera firmware or scripts.
 - [Future milestones](future_milestones/): Reserved for subsequent documented work.
 
@@ -42,6 +42,6 @@ Group 18: Aden Casselman, Elijah Jarrett, Lorenzo Reyes, Skyler Beck, and Tyler 
 
 ## Status and attribution
 
-This is a collaborative university engineering project. The source code and reports represent team work; individual contributions are not assigned without evidence. Three milestone stages are documented, but a fully integrated autonomous system is not claimed. The Milestone 03 notes summarize the submitted team report; the native MATLAB, Simulink, and Word files have not been added.
+This is a collaborative university engineering project. The source code and reports represent team work; individual contributions are not assigned without evidence. Three milestone stages are documented, but a fully integrated autonomous system is not claimed. The Milestone 03 PDF report and MATLAB App Designer `.mlapp` source are present. A standalone native Simulink `.slx` file has not been verified in the Milestone 03 folder.
 
 The repository retains some generated Simulink build outputs from the original Milestone 01 upload. These are not primary source files and are excluded from future tracking by the updated Git ignore rules.

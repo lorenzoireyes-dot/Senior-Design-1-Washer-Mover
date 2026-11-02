@@ -4,7 +4,7 @@
 **Date:** October 22, 2026  
 **System:** Automated washer positioning system
 
-This Markdown file summarizes the submitted Milestone 03 team report. It is **not** the original Word document.
+This Markdown file summarizes the Milestone 03 team report. The [original report PDF](milestone3_g18.pdf) is included alongside this summary.
 
 ## Control subsystem
 
