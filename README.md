@@ -12,7 +12,7 @@ Three milestones are documented with their reports and supporting engineering fi
 | --- | --- | --- |
 | [01: Sensor and Actuator Control](milestone_01_sensor_actuator/README.md) | Arduino Mega 2560, Simulink sensor acquisition, manual and threshold based servo control, SolidWorks design | [Report](milestone_01_sensor_actuator/reports/Milestone1_Group18%20(1).pdf), [Simulink models](milestone_01_sensor_actuator/matlab_code/), [Pictures](milestone_01_sensor_actuator/pictures/) |
 | [02: Computer Vision and Concept Selection](milestone_02_computer_vision/README.md) | MATLAB image processing, color and shape classification, centroid identification, mechanical concept evaluation | [Report](milestone_02_computer_vision/reports/milestone2_g18.pdf), [MATLAB scripts](milestone_02_computer_vision/matlab_code/), [CAD files](milestone_02_computer_vision/cad_documents/) |
-| [03: Control Subsystem and Motor Positioning](milestone_03_control_subsystem/README.md) | MATLAB App Designer GUI, Arduino Mega and L298N interface, motor control testing, safety and financial evaluation | [Report](milestone_03_control_subsystem/reports/milestone3_g18.pdf), [MATLAB app](milestone_03_control_subsystem/matlab_code/select_gui_test.mlapp), [Figures](milestone_03_control_subsystem/Pictures/), [Test images](milestone_03_control_subsystem/testing/Pictures/) |
+| [03: Control Subsystem and Motor Positioning](milestone_03_control_subsystem/README.md) | MATLAB App Designer GUI, Arduino Mega and L298N interface, motor control testing, safety and financial evaluation | [Report](milestone_03_control_subsystem/reports/milestone3_g18.pdf), [MATLAB app](milestone_03_control_subsystem/matlab_code/select_gui_test.mlapp), [Simulink model](milestone_03_control_subsystem/matlab_code/MotorModel_Sp23_V22b.slx), [Figures](milestone_03_control_subsystem/Pictures/), [Test images](milestone_03_control_subsystem/testing/Pictures/) |
 
 ## Engineering highlights
 
@@ -42,6 +42,6 @@ Group 18: Aden Casselman, Elijah Jarrett, Lorenzo Reyes, Skyler Beck, and Tyler 
 
 ## Status and attribution
 
-This is a collaborative university engineering project. The source code and reports represent team work; individual contributions are not assigned without evidence. Three milestone stages are documented, but a fully integrated autonomous system is not claimed. The Milestone 03 PDF report and MATLAB App Designer `.mlapp` source are present. A standalone native Simulink `.slx` file has not been verified in the Milestone 03 folder.
+This is a collaborative university engineering project. The source code and reports represent team work; individual contributions are not assigned without evidence. Three milestone stages are documented, but a fully integrated autonomous system is not claimed. The Milestone 03 PDF report and MATLAB App Designer `.mlapp` source are present. The Simulink `.slx` file is available in the Milestone 03 `matlab_code` folder, but execution and hardware compatibility have not been independently verified.
 
 The repository retains some generated Simulink build outputs from the original Milestone 01 upload. These are not primary source files and are excluded from future tracking by the updated Git ignore rules.

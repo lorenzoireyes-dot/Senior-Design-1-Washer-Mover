@@ -20,7 +20,7 @@ Integrate camera based washer identification, a MATLAB App Designer GUI, a Simul
 | Location | Contents |
 | --- | --- |
 | [reports](reports/) | [Original Milestone 03 PDF](reports/milestone3_g18.pdf) and [report summary](reports/Milestone3_Group18_Summary.md) |
-| [matlab_code](matlab_code/) | [App Designer source: select_gui_test.mlapp](matlab_code/select_gui_test.mlapp) |
+| [matlab_code](matlab_code/) | [App Designer source](matlab_code/select_gui_test.mlapp) and [Simulink motor control model](matlab_code/MotorModel_Sp23_V22b.slx) |
 | [Pictures](Pictures/) | Five engineering figures: vision test, GUI startup, circuit diagram, PID parameters, software flowchart |
 | [testing](testing/) | [Controller observations](testing/PID_results.md) and [ten experimental images](testing/Pictures/) |
 
@@ -40,7 +40,7 @@ Integrate camera based washer identification, a MATLAB App Designer GUI, a Simul
 
 **Milestone 03 documented.** Full autonomous washer retrieval is not validated. Controller overshoot, settling time, steady state error, and final risk acceptance have not been quantified or verified in the submitted report.
 
-The original Milestone 03 PDF report, native MATLAB App Designer `.mlapp` file, and testing figures are available in the directories above. A standalone Simulink `.slx` model is not present in the Milestone 03 folder. Documentation represents team work and does not assign individual authorship.
+The original Milestone 03 PDF report, native MATLAB App Designer `.mlapp` file, and testing figures are available in the directories above. The [Simulink motor control model](matlab_code/MotorModel_Sp23_V22b.slx) is also present. The report and uploaded files document the work; the model's execution and hardware operation have not been independently verified. Documentation represents team work and does not assign individual authorship.
 
 ## Team
 
