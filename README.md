@@ -2,46 +2,63 @@
 
 **Clemson University | ECE 4950 | Group 18 | Fall 2026**
 
-An ongoing senior design project exploring an autonomous washer moving system through sensor and actuator control, computer vision, mechanical design, and engineering evaluation.
+An engineering senior design project developing an automated washer positioning system using MATLAB computer vision, an App Designer interface, Simulink control, Arduino hardware, and custom mechanical fixtures.
 
-## Progress
+## Current status
 
-Three milestones are documented with their reports and supporting engineering files. Milestone 03 includes the original PDF report, a MATLAB App Designer application, circuit and GUI figures, and motor and vision test images. The fully integrated autonomous washer moving system remains under development.
+**Four milestone directories are documented.** Milestone 04 adds the current MATLAB GUI, Simulink game board and motor models, quadrature encoder support code, a revised electrical schematic, SolidWorks and STL prototype iterations, test imagery, and a demonstration video. The integrated prototype is documented, but measured end to end accuracy and fully autonomous washer pickup and delivery have not been independently verified.
 
-| Milestone | Completed work | Project evidence |
+## Milestones
+
+| Stage | Engineering work | Evidence |
 | --- | --- | --- |
-| [01: Sensor and Actuator Control](milestone_01_sensor_actuator/README.md) | Arduino Mega 2560, Simulink sensor acquisition, manual and threshold based servo control, SolidWorks design | [Report](milestone_01_sensor_actuator/reports/Milestone1_Group18%20(1).pdf), [Simulink models](milestone_01_sensor_actuator/matlab_code/), [Pictures](milestone_01_sensor_actuator/pictures/) |
-| [02: Computer Vision and Concept Selection](milestone_02_computer_vision/README.md) | MATLAB image processing, color and shape classification, centroid identification, mechanical concept evaluation | [Report](milestone_02_computer_vision/reports/milestone2_g18.pdf), [MATLAB scripts](milestone_02_computer_vision/matlab_code/), [CAD files](milestone_02_computer_vision/cad_documents/) |
-| [03: Control Subsystem and Motor Positioning](milestone_03_control_subsystem/README.md) | MATLAB App Designer GUI, Arduino Mega and L298N interface, motor control testing, safety and financial evaluation | [Report](milestone_03_control_subsystem/reports/milestone3_g18.pdf), [MATLAB app](milestone_03_control_subsystem/matlab_code/select_gui_test.mlapp), [Simulink model](milestone_03_control_subsystem/matlab_code/MotorModel_Sp23_V22b.slx), [Figures](milestone_03_control_subsystem/Pictures/), [Test images](milestone_03_control_subsystem/testing/Pictures/) |
+| [01: Sensor and actuator control](milestone_01_sensor_actuator/README.md) | Arduino Mega 2560, Simulink analog acquisition, servo control, and introductory CAD | [Report](milestone_01_sensor_actuator/reports/Milestone1_Group18%20(1).pdf) · [Model files](milestone_01_sensor_actuator/matlab_code/) |
+| [02: Computer vision and concept selection](milestone_02_computer_vision/README.md) | Color and shape processing, centroid detection, and rotating board concept evaluation | [Report](milestone_02_computer_vision/reports/milestone2_g18.pdf) · [MATLAB scripts](milestone_02_computer_vision/matlab_code/) |
+| [03: Control subsystem and motor positioning](milestone_03_control_subsystem/README.md) | MATLAB GUI, Arduino and L298N testing, Simulink controller and motor response analysis | [Report](milestone_03_control_subsystem/reports/milestone3_g18.pdf) · [Control results](milestone_03_control_subsystem/testing/PID_results.md) |
+| [04: Prototype integration and testing](milestone_04/README.md) | Current GUI and Simulink models, encoder interface, prototype CAD iterations, revised electrical schematic, and test evidence | [Current GUI](milestone_04/Matlab%20Code/milestone4.mlapp) · [Schematic](milestone_04/Electrical%20Schematic/ECE4950_Group18_Electrical_Schematic_Rev1.1.pdf) · [Test video](milestone_04/Video/Test%20Run.mp4) |
 
-## Engineering highlights
+## Engineering overview
 
-### Milestone 01
+The system combines camera based washer detection and selection with a motor driven positioning mechanism. MATLAB processes images and provides the operator interface. Simulink models support control and hardware deployment. Arduino hardware interfaces with a motor driver, motor, and position feedback circuitry. Custom 3D parts are documented through SolidWorks and STL files.
 
-The team interfaced a potentiometer and servo motor with an Arduino Mega using MATLAB and Simulink 2026a. The report documents live analog measurement, manual actuator commands, and threshold based switching. A SolidWorks golf ball shaped design was created as a separate introductory CAD exercise.
+In Milestone 02, the team selected a rotating board and stationary electromagnetic pickup concept in its design evaluation. In Milestone 03, experimental control tests used reported PID parameters **P = 0.7, I = 0, D = 0.05**, with remaining response errors. Milestone 04 extends the repository with prototype iteration files, encoder source code, and a recorded test. The uploaded evidence does not establish final retrieval reliability or validated numerical performance.
 
-### Milestone 02
+## Start with the current files
 
-The team explored background subtraction, region detection, centroid location, and object classification using MATLAB. The repository includes scripts for processing saved test images and experimenting with webcam capture. A weighted design matrix selected a rotating board with a stationary electromagnetic pickup, scoring 79/100 in the team's evaluation.
+- [Milestone 04 documentation](milestone_04/README.md)
+- [Current MATLAB App Designer GUI](milestone_04/Matlab%20Code/milestone4.mlapp)
+- [Game board Simulink model](milestone_04/Matlab%20Code/GameBoard_Fall26.slx)
+- [Motor Simulink model](milestone_04/Matlab%20Code/MotorModel_Sp23_V22b.slx)
+- [Encoder integration source](milestone_04/Matlab%20Code/)
+- [Electrical schematic revision 1.1](milestone_04/Electrical%20Schematic/ECE4950_Group18_Electrical_Schematic_Rev1.1.pdf)
+- [Mechanical designs and printable STLs](milestone_04/3d_print_files/)
+- [Prototype and GUI test images](milestone_04/pictures/Prototype%201/)
+- [Test demonstration](milestone_04/Video/Test%20Run.mp4)
 
-### Milestone 03
+To reproduce the project, open the native files in MATLAB, App Designer, and Simulink, then review hardware support package requirements and the electrical schematic. The encoder System object has a source directory assumption that may require adjusting in a fresh checkout. See the Milestone 04 README for details.
 
-Group 18 developed a MATLAB App Designer GUI for detecting colored washers and selecting a target, connected the selection workflow to a Simulink motor model and Arduino Mega, and tested controller response using a DC motor and L298N driver. Reported PID gains were P = 0.7, I = 0, D = 0.05. The report also documents a preliminary DFMEA, a financial exercise, and an employee training program. Complete washer retrieval, motion accuracy metrics, and final safety verification remain future work.
+## Repository structure
 
-## Repository layout
+```text
+milestone_01_sensor_actuator/       Sensors, servo control, introductory CAD, report
+milestone_02_computer_vision/       Vision processing, concept selection, CAD, report
+milestone_03_control_subsystem/     Interface and control development, experimental results
+milestone_04/
+  3d_print_files/                  Mechanical iterations and holders
+  Electrical Schematic/            Electrical design PDF
+  Matlab Code/                     GUI, Simulink models, encoder dependencies
+  Video/                           Test run demonstration
+  pictures/                        Prototype photographs and vision/GUI evidence
+```
 
-- [Milestone 01](milestone_01_sensor_actuator/): PDF report, Simulink models, plots, circuit diagram, and hardware photographs.
-- [Milestone 02](milestone_02_computer_vision/): PDF report, MATLAB vision scripts, test images, design evidence, and game board CAD exports.
-- [Milestone 03](milestone_03_control_subsystem/): Original PDF report, App Designer source, control and vision figures, experimental plots, and accompanying documentation.
-- [Camera source](camera_source/): Directory retained for future consolidated camera firmware or scripts.
-- [Future milestones](future_milestones/): Reserved for subsequent documented work.
-
-## Team
+## Team and attribution
 
 Group 18: Aden Casselman, Elijah Jarrett, Lorenzo Reyes, Skyler Beck, and Tyler Burton.
 
-## Status and attribution
+This is a collaborative Clemson University design project. Source files, drawings, reports, and demonstrations document team work; no individual authorship is assigned without separate evidence.
 
-This is a collaborative university engineering project. The source code and reports represent team work; individual contributions are not assigned without evidence. Three milestone stages are documented, but a fully integrated autonomous system is not claimed. The Milestone 03 PDF report and MATLAB App Designer `.mlapp` source are present. The Simulink `.slx` file is available in the Milestone 03 `matlab_code` folder, but execution and hardware compatibility have not been independently verified.
+## Verification and repository hygiene
 
-The repository retains some generated Simulink build outputs from the original Milestone 01 upload. These are not primary source files and are excluded from future tracking by the updated Git ignore rules.
+The uploaded project files and recorded test establish what has been documented, not an independently verified full autonomous deployment. A final Milestone 04 PDF report is not currently present.
+
+Some previously committed Milestone 01 generated MATLAB and Simulink build artifacts remain in the history and directory. These are not necessary project entry points. The primary reusable deliverables are the native models, GUI source, required custom code, documentation, and hardware designs.
